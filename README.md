@@ -86,41 +86,42 @@ Supports multiple directory creation at once, without given errors.
 
 
 
-### Options the shell commands can support:
+### Supported Options for Shell Commands:
 
-1) **Cd** command - 
-- **~**
-- **/**
-- **Blank**
-- **Any other directory**
+1. **Cd Command:**
+   - `~` (Home directory)
+   - `/` (Root directory)
+   - Blank (Current directory)
+   - Any other directory
 
-2) **pwd** command - 
-- **-L**
-- **–help**
+2. **Pwd Command:**
+   - `-L` (Follow symbolic links)
+   - `--help` (Display help information)
 
-3) **echo** command - 
-- **\***
-- **-n**
+3. **Echo Command:**
+   - `*` (Wildcard character)
+   - `-n` (Do not output the trailing newline character)
 
-4) **ls** command - 
-- **-a**
-- **-l**
+4. **Ls Command:**
+   - `-a` (Show hidden files)
+   - `-l` (Long format)
 
-5) **cat** command - 
-- **file1.txt file2.txt**
-- **-n**
-- **-b**
+5. **Cat Command:**
+   - `file1.txt file2.txt` (Concatenate files)
+   - `-n` (Number all output lines)
+   - `-b` (Number non-blank output lines)
 
-6) **date** command - 
-- **-u**
-- **-r**
+6. **Date Command:**
+   - `-u` (Display Coordinated Universal Time, UTC)
+   - `-r` (Display the last modification time of a file)
 
-7) **rm** command -
-- **-v**
-- **-i**
+7. **Rm Command:**
+   - `-v` (Be verbose, show what is being done)
+   - `-i` (Prompt before every removal)
 
-8) **mkdir** command -
-- **-p**
-- **-v**
+8. **Mkdir Command:**
+   - `-p` (Create parent directories if they do not exist)
+   - `-v` (Be verbose, show what is being done)
+
 
 
