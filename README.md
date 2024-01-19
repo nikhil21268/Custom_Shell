@@ -2,6 +2,42 @@
 # Custom Linux Shell | Operating Systems Assignment
 
 Built a fully functional Custom Linux Shell for Artix Linux, featuring essential commands like **cd**, **ls**, **echo**, **cat**, **date**, **mkdir**, **rm** and **pwd** 
+
+# Problem Statement
+
+## Basic Linux/Unix Shell Implementation
+
+### Introduction
+
+Linux and other Unix-like operating systems employ "shells," which are programs providing a command-line interface for users to input commands. This assignment focuses on creating a simple shell using standard C libraries and Linux system calls, such as fork(), exec() family system calls, and wait() family of system calls. The shell should handle both "internal" and "external" commands.
+
+### Task Overview
+
+1. **Internal Commands:**
+   - Design a shell capable of handling three internal commands: `cd`, `echo`, and `pwd`.
+   - Internal commands are interpreted by the shell itself without requiring external programs.
+   - External commands include `ls`, `cat`, `date`, `rm`, and `mkdir`, which should be handled by separate programs.
+
+2. **Shell Functionality:**
+   - The shell should create new processes using fork() for external commands.
+   - Use the exec() family system calls to run individual external command programs.
+   - The parent process must wait for the child process to terminate using the wait() family of system calls.
+
+### Tasks Breakdown
+
+#### Task 1 - Shell Implementation with fork()/execl()
+   - Design a shell capable of handling internal and external commands.
+   - Implement external command programs (`ls`, `cat`, `date`, `rm`, and `mkdir`).
+   - Document and demonstrate the correct functioning of each command with at least two options.
+   - Handle corner cases such as invalid options with graceful degradation.
+
+#### Task 2 - Shell Implementation with pthread_create()/system()
+   - Achieve the same functionality as Task 1 but use pthread_create() instead of fork() for thread-based execution.
+   - Use system() instead of execl() family functions to run external command programs.
+   - Ensure the thread-based execution is triggered by commands followed by "&t".
+   - The external command programs should be compatible with both fork()/execl() and pthread_create()/system() versions of the shell.
+
+
 ## Deployment
 
 * To deploy this project, **cd** into the **ToRun** directory and run -
